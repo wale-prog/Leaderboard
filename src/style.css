@@ -1,7 +1,73 @@
-body {
-  background-color: beige;
+* {
+  padding: 0;
+  margin: 0;
 }
 
-.bg-change {
-  background-color: blueviolet;
+.heading{
+ margin: 12px;
+ font-size: 18px;
+ font-weight: bold;
+}
+
+.score-heading{
+  display: flex;
+  justify-content: space-between;
+  margin: 24px 0 24px 0;
+}
+
+.score-heading p {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.recent-scores {
+  width: 50%;
+}
+
+.main {
+  display: flex;
+  justify-content: space-around;
+  gap: 25%;
+  margin-left: 24px;
+  margin-right: 12px;
+}
+
+.list-items {
+  border: solid 2px #000;
+}
+
+.list-items li {
+  list-style: none;
+}
+
+.list-items li:nth-child(even){
+  background-color: #d3d3d3;
+}
+
+.add-score {
+  width: 50%;
+  margin-right: 80px;
+}
+
+.add-score p{
+  margin: 24px 0 24px 0;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  width: 60%;
+}
+
+.refresh {
+  text-decoration:  none;
+  border: solid #000 2px;
+  padding: 4px 8px 4px 8px;
+  color: black;
+  box-shadow: 2px 2px;
+  cursor: pointer;
+}
+
+.refresh:active{
+  background-color: #d3d3d3;
 }
