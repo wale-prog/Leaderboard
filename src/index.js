@@ -1,9 +1,8 @@
 import './style.css';
 
 const mainBody = document.querySelector('.main-body');
-const content = `<div class="heading">
-<h2>Leadershipboard</h2>
-</div>
+const mainContent = document.createElement('main');
+mainContent.innerHTML = `
 <main class="main">
 <div class="recent-scores">
     <div class="score-heading">
@@ -31,4 +30,4 @@ const content = `<div class="heading">
 </div>  
 </main>  `;
 
-mainBody.innerHTML = content;
+mainBody.append(mainContent);
