@@ -14,7 +14,6 @@ module.exports = {
   },
   plugins: [
     new HtmlWebpackPlugin({
-      title: 'Webpack and Linter Setup template',
       template: './src/index.html',
     }),
   ],
