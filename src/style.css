@@ -3,9 +3,29 @@
   margin: 0;
 }
 
-.heading {
+body {
+  background-color: #edf0f3;
+  font-family: 'Ubuntu', sans-serif;
+}
+
+.nav {
   font-size: 18px;
-  font-weight: bold;
+  font-weight: 800;
+  background-color: blanchedalmond;
+  padding: 20px 0 20px 0;
+  display: flex;
+}
+
+.fa-trophy {
+  position: relative;
+  top: 16px;
+  margin-right: 20px;
+  margin-left: 24px;
+  color: crimson;
+}
+
+.fa-medal {
+  color: crimson;
 }
 
 .score-heading {
@@ -21,13 +41,13 @@
 
 .recent-scores {
   width: 60%;
-  margin-left: 12px;
 }
 
 .main {
   display: flex;
-  justify-content: space-around;
-  gap: 25%;
+  margin-right: auto;
+  margin-left: 48px;
+  gap: 8px;
 }
 
 .list-items {
@@ -36,6 +56,23 @@
 
 .list-items li {
   list-style: none;
+  display: flex;
+  font-size: 24px;
+  padding: 12px;
+}
+
+.add-score p {
+  margin: 32px 0 24px 25%;
+  font-size: 22px;
+  font-weight: 800;
+}
+
+.list-items li p:last-child {
+  margin-left: auto;
+}
+
+.list-items li p:nth-child(2) {
+  margin-left: 12px;
 }
 
 .list-items li:nth-child(even) {
@@ -46,16 +83,12 @@
   width: 50%;
 }
 
-.add-score p {
-  margin: 32px 0 24px 0;
-  font-size: 22px;
-  font-weight: 800;
-}
-
 .form {
   display: flex;
   flex-direction: column;
   width: 60%;
+  margin-left: auto;
+  margin-right: 15%;
 }
 
 .refresh {
@@ -69,11 +102,6 @@
 
 .refresh:active {
   background-color: #d3d3d3;
-}
-
-.main-body {
-  width: 60%;
-  margin: 60px auto 0 auto;
 }
 
 .name,
