@@ -1,11 +1,9 @@
+const displayUI = () => {
+  const mainBody = document.querySelector('.main-body');
+  const mainContent = document.createElement('main');
+  mainContent.setAttribute('class', 'main');
 
-
-const displayUI =  ()=> {
-    const mainBody = document.querySelector('.main-body');
-    const mainContent = document.createElement('main');
-
-    mainContent.innerHTML = `
-        <main class="main">
+  mainContent.innerHTML = `
         <div class="recent-scores">
             <div class="score-heading">
                 <p>Recent scores</p>
@@ -22,10 +20,9 @@ const displayUI =  ()=> {
                 <input class="score" type="number" placeholder="Your score">
                 <button class="submit-btn" type="submit">Submit</button>
             </form>
-        </div>  
-        </main>  `;
+        </div>  `;
 
-    mainBody.append(mainContent);
-}
+  mainBody.append(mainContent);
+};
 
 export default displayUI;
