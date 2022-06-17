@@ -14,7 +14,7 @@
 
 ## Live Demo
 
-[Live demo](https://wale-prog.github.io/Leadershipboard/)
+[Live demo](https://wale-prog.github.io/Leaderboard/)
 
 ## Getting Started
 

@@ -11,7 +11,13 @@ const fetchData = async () => {
 export const singleRun = async () => {
   let myData = [];
   myData = await fetchData();
-  const users = myData.result;
+  const myInfo = myData.result;
+  const users = [];
+  let i = myInfo.length - 1;
+  while (users.length < 6) {
+    users.push(myInfo[i]);
+    i -= 1;
+  }
   users.forEach((item) => {
     generate(item);
   });
